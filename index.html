@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Discover useful gadgets, accessories and everyday products.">
+  <title>NovaCart — Discover More</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">Nova<span>Cart</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <button id="cart-toggle" class="cart-button">
+        Cart <span id="cart-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR NEXT FAVORITE FIND</p>
+      <h1>Discover more.<br><span>Live better.</span></h1>
+      <p>Useful products, smart gadgets and everyday essentials.</p>
+      <a href="#shop" class="primary-button">Explore products</a>
+    </section>
+
+    <section id="shop" class="shop-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR COLLECTION</p>
+          <h2>Popular picks</h2>
+        </div>
+        <label class="search-box">
+          <span class="sr-only">Search products</span>
+          <input id="search" type="search" placeholder="Search products...">
+        </label>
+      </div>
+
+      <div id="categories" class="categories"></div>
+      <div id="products" class="product-grid"></div>
+      <p id="empty-message" hidden>No products found. Try another search.</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>Shopping made simple.</h2>
+      <p>Discover products for your everyday life, all in one place.</p>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel" hidden>
+    <div class="cart-heading">
+      <h2>Your cart</h2>
+      <button id="cart-close" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <p>Total <strong id="cart-total">AED 0.00</strong></p>
+      <button id="checkout" class="primary-button full-width">
+        Checkout (demo only)
+      </button>
+      <p class="notice">Demo only. No payment or order will be processed.</p>
+    </div>
+  </aside>
+
+  <footer>
+    <a class="logo" href="#">Nova<span>Cart</span></a>
+    <p>© <span id="year"></span> NovaCart. Store prototype.</p>
+    <p>Prices and products are demonstration data.</p>
+  </footer>
+</body>
+</html>
